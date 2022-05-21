@@ -11,7 +11,7 @@ fs.stat(fileOfPath, (err, res) => {
     }
 })
 
-stdout.write('de barev!\n');
+stdout.write('Приветствую путник!\nНапиши свое послание!\n');
 
 stdin.on('data', data => {
 
@@ -20,5 +20,3 @@ stdin.on('data', data => {
 });
 
 process.on('exit', () => stdout.write('Удачи в изучении Node.js!\n'));
-
-// process.on('exit', (err) => console.log('err'))
