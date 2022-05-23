@@ -15,9 +15,7 @@ const files =  fs.readdir(pathFile,
 function getFileInfo(file){
   const pathFileName = path.join(__dirname, 'secret-folder', file);
   fs.stat(pathFileName, (err, stats) => {
-
     (!stats.isDirectory()) ? console.log(getFileAndIndexName(file), convertBytes(stats.size)) : null;
-
   });
 }
 

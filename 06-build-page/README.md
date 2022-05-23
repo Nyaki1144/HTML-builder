@@ -14,7 +14,7 @@
 - Запрещается использование синхронных функций модуля fs такие, как ```fs.statSync(path[, options])```, 
 ```fs.readFileSync(path[, options])``` и другие находящиеся в разделе [synchronous API](https://nodejs.org/api/fs.html#fs_synchronous_api)
 
-### Требования
+### Требования://
 - [ ] После завершения работы скрипта должна быть создана папка **project-dist**
 - [ ] В папке **project-dist** должны находиться файлы **index.html** и **style.css** 
 - [ ] В папке **project-dist** должна находиться папка **assets** являющаяся точной копией папки **assets** находящейся в **06-build-page**
