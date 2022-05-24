@@ -14,8 +14,8 @@ fs.stat(fileOfPath, (err, res) => {
 stdout.write('Приветствую путник!\nНапиши свое послание!\n');
 
 stdin.on('data', data => {
-
-    data.toString() === ('exit\n' || '^C') ? process.exit():
+    let str = data.toString();
+    str.match(/exit|^C/) ? process.exit():
     fs.appendFile(fileOfPath, data, () => {})
 });
 
